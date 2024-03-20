@@ -1,16 +1,11 @@
-// App.jsx
-
-import React from 'react';
-import Nav from './components/nav';
-import './css/main.scss';
+import React from "react";
+import Layout from "./components/layout";
+import './css/main.scss'
 
 function App() {
   return (
-    <div className='main'>
-      <div className='content'>
-        <Nav />
-        <h1>Hello World</h1>
-      </div>
+    <div className="App">
+      <Layout />
     </div>
   );
 }

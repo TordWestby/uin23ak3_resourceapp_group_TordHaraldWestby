@@ -1,19 +1,32 @@
 // components/nav.jsx
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Resources from "./resources";
 
-import React from 'react';
 
-const Nav = () => {
-  return (
-    <nav className="navbar">
-      <ul className="nav-list">
-        <li className="nav-item"><a href="#">HTML</a></li>
-        <li className="nav-item"><a href="#">CSS</a></li>
-        <li className="nav-item"><a href="#">JavaScript</a></li>
-        <li className="nav-item"><a href="#">Kontakt</a></li>
-        <li className="nav-item"><a href="#">Kontakt</a></li>
-      </ul>
-    </nav>
-  );
-};
+function Navbar() {
+    return (
+      <nav className="navbar">
+        <ul>
+          <li>
+            <a href="/html">HTML</a>
+          </li>
+          <li>
+            <a href="/css">CSS</a>
+          </li>
+          <li>
+            <a href="/javascript">JavaScript</a>
+          </li>
+         <li>
+            <a href="/react">React</a>
+          </li>
+          <li>
+            <a href="/headless-cms">Sanity and Headless CMS</a>
+          </li>
+        </ul>
+      </nav>
+    );
+  }
+  
 
-export default Nav;
+export default Navbar;
