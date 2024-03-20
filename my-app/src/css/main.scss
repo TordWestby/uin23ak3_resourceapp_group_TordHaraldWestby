@@ -16,11 +16,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
+    font-family: var(--font);
 }
 
 body h1 {
-    color: var(--lighter-blue-ish);
+    color: var(--header-blue);
 }
+
 
 .navbar {
     width: 100%;
@@ -29,21 +31,20 @@ body h1 {
 }
 
 .navbar ul {
-    margin-left: -1rem;
-    margin-right: -1rem;
-    margin-top: 0;
+    margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: row;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .navbar ul li {
-    width: 255px;
+    margin-right: 0;
+    margin-left: 0;
+    width: 250px;
     height: auto;
-    background-color: var(--header-blue);
+    background-color: var(--background-color);
     
 }
 
@@ -53,11 +54,26 @@ body h1 {
     align-items: center;
     color: var(--white);
     font-size: 25px;
+    background-color: var(--header-blue);
+    height: 100%;
+    width: 100%;
 }
 
 .App {
     background-color: var(--white);
-    width: 1400px;
-    height: 400px;
+    width: 100%;
+    height: 500px;
+}
+
+div li {
+    color: var(--lighter-blue-ish);
+}
+
+div li a {
+    font-size: 18px;
+}
+
+body div {
+    margin: 5rem;
 }
 
