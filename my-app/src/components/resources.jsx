@@ -12,7 +12,7 @@ export default function Resources() {
     <div>
       <h1>Resources for {category.toUpperCase()}</h1>
       <ul>
-        {resourcesByCategory.map((resource) => (
+        {resourcesByCategory.map((resource) => (            ///Denne koden er bygd på fra en kode gitt av ChatGpt 3.5. Link til chaten er her https://chat.openai.com/share/0fd5c77e-6183-493f-8d75-856a5d763cb2
           <li key={resource.title}>
             <a href={resource.url} target="_blank" rel="noreferrer">
               {resource.title}
