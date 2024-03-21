@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Gitignore for arbeidskrav3
+/my-app/node_modules
+node_modules
