@@ -1,4 +1,4 @@
-
+// css/main.scss
 :root {
     --font: "Roboto", sans-serif;
 
@@ -9,20 +9,77 @@
     --white: #fff;
 }
 
-* {
-    background-color: var(--background-color);
-}
-
-.main {
-    display: flex;
+body {
     justify-content: center;
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-family: var(--font);
 }
 
-.content {
+body h1 {
+    color: var(--header-blue);
+}
+
+
+.navbar {
+    width: 100%;
+    height: auto;
+    background-color: var(--background-color);
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    margin-right: 0;
+    margin-left: 0;
+    width: 250px;
+    height: auto;
+    background-color: var(--background-color);
+    
+}
+
+.navbar ul li a {
     display: flex;
     justify-content: center;
-    width: 80%;
-    height: 700px;
+    align-items: center;
+    color: var(--white);
+    font-size: 25px;
+    background-color: var(--header-blue);
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
 }
+
+.navbar ul li a:hover {
+    background-color: var(--white);
+    color: var(--header-blue);
+}
+
+.App {
+    background-color: var(--white);
+    width: 100%;
+    height: 500px;
+}
+
+div li {
+    color: var(--lighter-blue-ish);
+}
+
+div li a {
+    font-size: 18px;
+}
+
+body div {
+    margin: 5rem;
+}
+

@@ -1,12 +1,12 @@
-import './css/main.scss';
+import React from "react";
+import Layout from "./components/layout";
+import './css/main.scss'
 
 function App() {
   return (
-      <div className='main'>
-        <div className='content'>
-          <h1>Hello World</h1>
-        </div>
-      </div>
+    <div className="App">
+      <Layout />
+    </div>
   );
 }
 
