@@ -57,6 +57,12 @@ body h1 {
     background-color: var(--header-blue);
     height: 100%;
     width: 100%;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    background-color: var(--white);
+    color: var(--header-blue);
 }
 
 .App {
